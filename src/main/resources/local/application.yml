@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: msj-zuul
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        service-name: msj-zuul
+server:
+  port: 9003
+zuul:
+  routes:
+    msj-user:
+      path: /msj-user/**
+      serciveId: msj-user
+    msj-football:
+      path: /msj-football/**
+      serviceId: msj-football
+    msj-product:
+      path: /msj-product/**
+      serviceId: msj-product
+    msj-order:
+      path: /msj-order/**
+      serviceId: msj-order
+    msj-pay:
+      path: /msj-pay/**
+      serviceId: msj-pay
+  #是否开启重试功能
+  retryable: false
+ribbon:
+  #对当前服务的重试次数
+  MaxAutoRetries: 0
+  #切换相同Server的次数
+  MaxAutoRetriesNextServer: 0
