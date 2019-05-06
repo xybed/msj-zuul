@@ -10,11 +10,11 @@
     </parent>
 
     <groupId>com.msj</groupId>
-    <artifactId>zuul</artifactId>
-    <version>1.0</version>
+    <artifactId>msj-zuul</artifactId>
+    <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>zuul</name>
+    <name>msj-zuul</name>
     <description>网关项目</description>
 
     <properties>
