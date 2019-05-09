@@ -16,3 +16,17 @@ run docker container
 docker run -d --name msj-zuul --restart=always -p 9003:9003 msj-zuul:prod
 ```
 
+停止容器
+```bash
+docker stop msj-zuul
+```
+
+移除容器
+```bash
+docker rm msj-zuul
+```
+
+移除旧的镜像
+```bash
+docker rmi 旧镜像的IMAGE ID
+```
