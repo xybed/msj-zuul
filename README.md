@@ -16,6 +16,11 @@ run docker container
 docker run -d --name msj-zuul --restart=always -p 9003:9003 msj-zuul:prod
 ```
 
+利用docker compose启动容器
+```bash
+docker-compose -f docker_zuul.yml up -d
+```
+
 停止容器
 ```bash
 docker stop msj-zuul
